@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>927</width>
+    <height>639</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="8">
+     <widget class="QPushButton" name="confirmPushButton">
+      <property name="text">
+       <string>Confirm Bet</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="scoreLabel">
+      <property name="text">
+       <string>Score : 2000</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="7">
+     <widget class="QComboBox" name="upDownBetComboBox">
+      <item>
+       <property name="text">
+        <string>Up</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Down</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="QLineEdit" name="betInputLineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>223</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>223</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="7">
+     <widget class="QPushButton" name="nextDayPushButton">
+      <property name="text">
+       <string>Next Day</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLabel" name="betLabel">
+      <property name="text">
+       <string>Value of bet :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="selectIndexLabel">
+      <property name="text">
+       <string>Select index for betting :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="9">
+     <widget class="QScrollArea" name="chartArea">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>907</width>
+         <height>500</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QComboBox" name="selectIndexComboBox">
+      <item>
+       <property name="text">
+        <string>APPL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MSFT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GOOG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>INTC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SNE</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="2" colspan="2">
+     <widget class="QLabel" name="playersBetTextLabel">
+      <property name="text">
+       <string>Your bet is : %d on %s goes up/down</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="8">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>?Help</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="6">
+     <widget class="QLabel" name="dateLabel">
+      <property name="text">
+       <string>Todays date is : %date</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>927</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
